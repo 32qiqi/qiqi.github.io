@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial=1">
+		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<title></title>
+		 <!--[if lt IE 9]>
+		      <script src="dist/html5shiv.min.js"></script>
+		      <script src="dest/respond.min.js"></script>
+		    <![endif]
+		-->
+	</head>
+	<style>
+		body {
+    font-family: 'Alfa Slab One', cursive;
+    font-size:24px;
+    background: #2c333a;
+    position: relative;
+}
+button {
+    text-align: center;
+    position: fixed;
+    margin: 10% 45%;
+    height: 4em;
+    width: 5em;
+}
+div {
+    width: 80%;
+    margin: 4rem auto;
+    text-align: center;
+    perspective: 800px;
+    position: relative;
+}
+span{
+    font-family: 'Alfa Slab One', cursive;
+    display: inline-block;
+    margin-left: -20px;
+    color: #77c6bc;
+    transform-origin: 50% 70%;
+}
+
+span:nth-child(1) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) both, flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2s forwards, drop 4s 4s forwards;
+}
+span:nth-child(2) {
+   
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .2s both, flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.2s forwards, drop 4s 4.2s forwards;
+}
+span:nth-child(3) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .4s both, flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.4s forwards, drop 4s 4.4s forwards;
+}
+span:nth-child(4) {
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .6s both, flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.6s forwards, drop 4s 4.6s forwards;
+}
+span:nth-child(5) {
+  
+    animation: flipUp 1s cubic-bezier(0.6, -10, 0.25, 1.55) .8s both, flipDown .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 2.8s forwards, drop 4s 4.8s forwards;
+}
+
+@keyframes flipUp {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+@keyframes flipDown {
+    to {
+        transform: rotateX(-180deg);
+    }
+}
+@keyframes drop {
+    from {
+        transform: rotateX(-180deg);
+    }
+    to {
+        transform: translateY(100px);
+    }
+}
+		img{
+			border: 0px;
+		}
+		.up{
+			background-image: url(img/2.jpg);
+			width: 100%;
+		}
+	</style>
+	<body>
+		
+		<div class="up">
+			<p style="font-size: 50px;
+				color: white;
+				text-align: center;
+				line-height: 600px;
+				font-family: '微软雅黑';
+				letter-spacing: 6px;
+				font-style:oblique;
+				">
+				私人定制
+			</p>
+		</div>
+	
+	
+	
+	
+		<div  style="margin-top:-130px">
+		    <span>请仔细阅读条约：</span>
+		    <span>本网站以重信用，守条约，保证产品质量，为客户着想为原则</span>
+		    <span>坚持客户至上，服务至上，质量第一，信用第一，以诚信为品质</span>
+		    <span>&nbsp;由于签约客户不定期不质量,还请您耐心等待</span>
+		    
+	
+		 </div>
+				
+	
+	
+		
+
+		
+	</body>
+	
+	<script src="dist/js/jquery-3.3.1.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	
+</html>

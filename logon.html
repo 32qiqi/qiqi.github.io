@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login form with confirmation!</title>
+  <link rel="stylesheet" href="css1/style.css">
+</head>
+<body>
+
+
+<div class="overlay"></div>
+
+<div class="container">
+	<div class="loginBox">
+		<div class="userImage">
+			<img src="img1/touxiang.jpg">
+		</div>
+		<form action="insertServletloginzhuce" method="get">
+			<div class="input-wrapper">
+				<label>注册账号:</label>
+				<input type="text" name="username" placeholder="请输注册账号" required="required">
+				<div class="error-email"><div class="email-msg"></div><div class="triangle"></div></div>
+			</div>
+			<div class="input-wrapper">
+				<label>注册密码:</label>
+				<input type="password" name="password" placeholder="请输入注册密码" required="required">
+				<div class="error-pass"><div class="pass-msg"></div><div class="triangle"></div></div>
+			</div>
+			<a href="loginindex.html"><input type="button" name="" value="返回登录"></a>
+			<input type="submit" name="" value="立即注册" >
+		</form>
+	</div>
+</div>
+
+
+<script src='js1/jquery.min.js'></script>
+<script src="js1/script.js"></script>
+
+</body>
+</html>
