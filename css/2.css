@@ -1,0 +1,25 @@
+*{
+        margin: 0px;
+        padding: 0px;
+    }
+ 
+    /*将主容器的布局方式设置为相对布局,
+    注意:js部分会为container添加上宽度,
+     以实现margin:0 auto的样式需求*/
+ 
+    #container{
+      position: relative;
+      margin:0 auto;  
+    }
+ 
+    .box{
+      padding: 5px;
+      float: left;  
+    }
+ 
+    /*图片尺寸*/
+    .box img{
+      width: 250px;
+      height: auto;   
+    }
+  
